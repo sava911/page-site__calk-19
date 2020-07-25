@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Автокалькулятор</title>
+    <link rel="stylesheet" href="libs/normalize/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    </head>
+<body>
+
+    <div class="container">
+        <h1>Volkswagen Polo</h1>
+        <div id="img-container" class="img-container">
+            <img src="img/1.jpg" alt="VW polo">
+        </div>
+        <ul id="colors" class="colors">
+            <li class="color-button deep" data-img-src="img/1.jpg"></li>
+            <li class="color-button nightblue" data-img-src="img/2.jpg"></li>
+            <li class="color-button copperorange" data-img-src="img/3.jpg"></li>
+            <li class="color-button wildcherry" data-img-src="img/4.jpg"></li>
+            <li class="color-button reflex" data-img-src="img/5.jpg"></li>
+            <li class="color-button toffee" data-img-src="img/6.jpg"></li>
+            <li class="color-button titanium" data-img-src="img/7.jpg"></li>
+            <li class="color-button savanna" data-img-src="img/8.jpg"></li>
+            <li class="color-button urano" data-img-src="img/9.jpg"></li>
+            <li class="color-button pure" data-img-src="img/10.jpg"></li>
+        </ul>
+        <p class="price">Ваша цена: <span class="rub"></span> руб. ($ <span class="usd"></span>)</p>
+        <p class="config">1.6 (90 л.с), 5 МКПП, CLASSIC</p>
+        
+        <form id="carConfig">
+            <div class="column-container">
+                <h2>ВЫБОР ДВИГАТЕЛЯ</h2>
+			    <div class="form-block">
+				    <input type="radio" name="engine" id="engine90" value="600000" checked>
+				    <label for="engine90">1.6 (90 л.с.)</label>
+			    </div>
+			    <div class="form-block">
+				    <input type="radio" name="engine" id="engine110" value="700000">
+				    <label for="engine110">1.6 (110 л.с.)</label>
+			    </div>
+		    </div>
+            <div class="column-container">
+                <h2>ВЫБОР КПП</h2>
+                <div class="form-block">
+                    <input type="radio" name="transmission" id="manual" value="0" checked>
+                    <label for="manual">5 МКПП</label>
+                </div>
+                <div class="form-block">
+                    <input type="radio" name="transmission" id="auto" value="47000">
+                    <label for="auto">5 АКПП</label>
+                </div>
+            </div>
+            <div class="column-container">
+                <h2>ВЫБОР КОМПЛЕКТАЦИИ</h2>
+                <div class="form-block">
+				    <input type="radio" name="package" id="classic" value="0" checked>
+				    <label for="classic">Trendline</label>
+			    </div>
+			    <div class="form-block">
+				    <input type="radio" name="package" id="comfort" value="40000">
+				    <label for="comfort">Comfortline</label>
+			    </div>
+			    <div class="form-block">
+				    <input type="radio" name="package" id="luxe" value="90000">
+				    <label for="luxe">Drive</label>
+			    </div>
+            </div>
+        </form>
+    </div>
+    
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
